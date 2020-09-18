@@ -62,3 +62,9 @@ Two classification models created
     
         def update_parameters(parameters, grads, learning_rate):
         def predict(X, y, parameters):
+
+- __NN_models.py__ : It defines neural network model which trains with specific requirements such as activation function, learning rate, number of iterations and layer dimensions. Putting all the above helper functions together in this module. __(4. Merge 1,2,3 steps into one function)__
+
+    Modules:
+    
+        def L_layer_model(X, Y, layers_dims, learning_rate = 0.0075, num_iterations = 3000, print_cost=False, act="relu"):
