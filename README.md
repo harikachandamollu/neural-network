@@ -34,7 +34,7 @@ Two classification models created
         def relu_backward(dA,cache):
         def tanh_backward(dA,cache):
 
-- __forward_propagation.py__ : Modules to calculate forward propagation for all the layers. linear_forward carries out the calculation of multiplying input parameters and weights adding it with bias. activation_linear_forward applies acctivation function to the output of the previous function. model_linear_forward combines the above two modules by applying tanh/relu activation from 1 to L-1 layers on user selection and sigmoid function to final layer since it is a binary classification model.
+- __forward_propagation.py__ : Modules to calculate forward propagation for all the layers. linear_forward carries out the calculation of multiplying input parameters and weights adding it with bias. activation_linear_forward applies acctivation function to the output of the previous function. model_linear_forward combines the above two modules by applying tanh/relu activation from 1 to L-1 layers on user selection and sigmoid function to final layer since it is a binary classification model. __(3.(i). Implement forward propagation)__
 
     Modules:
     
@@ -42,13 +42,13 @@ Two classification models created
          def activation_linear_forward(A_prev, W, b, activation):
          def model_linear_forward(X, parameters, act):
          
-- __cost_functions.py__ : Module to compute the cross entropy cost from actual and predicted label.
+- __cost_functions.py__ : Module to compute the cross entropy cost from actual and predicted label. __(3.(ii). Compute loss)__
 
     Modules:
         
         def cross_entropy_cost(AL,Y):
         
-- __backward_propagation.py__ : Modules to calculate gradients derived from the loss. Since the derivatives depend upon the cost function, following modules compute  dW and db to adjust the parameters with respect to learning rate.
+- __backward_propagation.py__ : Modules to calculate gradients derived from the loss. Since the derivatives depend upon the cost function, following modules compute  dW and db to adjust the parameters with respect to learning rate. __(3.(iii). Implement backward propagation to get the gradients)__
 
     Modules:
     
@@ -56,7 +56,7 @@ Two classification models created
         def cross_entropy_activation_linear_backward(dA,cache,activation):
         def cross_entropy_model_linear_backward(AL,Y,caches,act):
         
-- __updation_and_prediction.py__ : Parameters are updated accroding to the update rule in update_parameters module. Predict module is used to predict the test set(unseen input parameters) with the help of learnt parameters.
+- __updation_and_prediction.py__ : Parameters are updated accroding to the update rule in update_parameters module. Predict module is used to predict the test set(unseen input parameters) with the help of learnt parameters. __(3.(iv). Update parameters(gradient descent))__
 
     Modules:
     
