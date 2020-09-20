@@ -68,3 +68,7 @@ Two classification models created
     Modules:
     
         def L_layer_model(X, Y, layers_dims, learning_rate = 0.0075, num_iterations = 3000, print_cost=False, act="relu"):
+        
+- __Neural_Network.ipynb__ : This notebook imports data from the csv file and passes into neural network model with few hyper parameters. Different plots on accuracy have been plotted using different learning rates, activation functions and number of hidden layers. 
+
+
