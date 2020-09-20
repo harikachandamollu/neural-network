@@ -71,4 +71,4 @@ Two classification models created
         
 - __Neural_Network.ipynb__ : This notebook imports data from the csv file and passes into neural network model with few hyper parameters. Different plots on accuracy have been plotted using different learning rates, activation functions and number of hidden layers. 
 
-
+- __heart.csv__ : Data analysis and pre-processing can be found at https://github.com/harikachandamollu/heart-disease-NN-one-hidden-layer.
